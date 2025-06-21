@@ -20,7 +20,7 @@
 
              <!-- Right image -->
               <div class="w-full lg:w-1/2 flex justify-center">
-                <img src="" alt="Hero Product" class="w-3/4 lg:w-full max-w-md mx-auto rounded-xl shadow-lg">
+                <img src="../assets/bag1.jpg" alt="Product" class="w-3/4 lg:w-full max-w-md mx-auto rounded-xl shadow-lg">
               </div>
         </div>
     </section>

@@ -90,6 +90,7 @@
 </template>
 <script setup>
 import { ref,onMounted,onUnmounted } from "vue";
+
 const isScrolled = ref(false);
 const ismobileMenuOpen = ref(false);
 const navItems=[
