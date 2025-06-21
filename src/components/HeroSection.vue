@@ -13,7 +13,7 @@
                 <div class="flex justify-center lg:justify-start gap-4 ">
                     <a href="/products" class="px-6 py-3 bg-pink-900 text-white text-sm font-semibold rounded-lg shadow
                      hover:bg-pink-600 transition ">Shop Now </a>
-                    <a href="/offers" class="px-6 py-3 bg-pink-600 text-white text-sm font-semibold rounded-lg 
+                    <a href="/offers" class="px-6 py-3 border border-pink-600 text-pink-600 text-sm font-semibold rounded-lg 
                      hover:bg-pink-200 transition ">View Offers </a>
                 </div>
              </div>
