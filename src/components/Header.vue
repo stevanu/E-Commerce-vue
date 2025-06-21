@@ -14,7 +14,7 @@
         >
           <!-- Logo + Mobile Menu Toggle -->
           <div class="flex justify-between items-center w-full md:w-auto">
-            <a href="/" class="text-2xl font-bold text-pink-600">ShopEase </a>
+            <a href="/" class="text-2xl font-bold text-pink-600">EvataShop</a>
             <button
               class="md:hidden text-gray-700 hover:text-indigo-600"
               aria-label="Toggle mobile menu"
