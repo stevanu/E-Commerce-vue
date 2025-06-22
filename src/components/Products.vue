@@ -24,14 +24,16 @@
       </header>
 
       <section class="relative overflow-hidden">
-        <ul
-          class="grid grid-cols-1 sm:grid-col-2 md:grid-cols-3 lg:grid-cols-4 gap-6"
-        >
-          <li
-            v-for="product in visibleProducts"
-            :key="product.id"
-            class="bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300 hover:scale-105"
-          >
+<transition name="fade-slide" mode="out-in">
+  <ul
+    :key="currentSlide"
+    class="grid grid-cols-1 sm:grid-col-2 md:grid-cols-3 lg:grid-cols-4 gap-6"
+  >
+    <li
+      v-for="product in visibleProducts"
+      :key="product.id"
+      class="bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300 hover:scale-105"
+    >
             <article>
               <figure class="relative">
                 <img
@@ -107,6 +109,7 @@
             </article>
           </li>
         </ul>
+        </transition>
       </section>
 
       <nav
@@ -126,6 +129,23 @@
     </main>
   </section>
 </template>
+
+<style scoped>
+.fade-slide-enter-active,
+.fade-slide-leave-active {
+  transition: all 0.3s ease-out;
+}
+.fade-slide-enter-from {
+  opacity: 0;
+  transform: translateX(20px);
+}
+.fade-slide-leave-to {
+  opacity: 0;
+  transform: translateX(-10px);
+}
+</style>
+
+
 <script setup>
 import { ref, computed, onMounted, onBeforeUnmount } from "vue";
 import product1 from "../assets/bag1.jpg";
@@ -139,6 +159,7 @@ import product8 from "../assets/bag8.jpg";
 
 const currentSlide = ref(0);
 const productsPerPage = ref(4);
+let autoSlideInterval;
 
 const products = [
   {
@@ -218,11 +239,13 @@ const visibleProducts = computed(() => {
 const nextSlide = () => {
   currentSlide.value =
     currentSlide.value === totalSlides.value - 1 ? 0 : currentSlide.value + 1;
+    resetAutoSlide();
 };
 
 const prevSlide = () => {
   currentSlide.value =
-    currentSlide.value === totalSlides.value - 1 ? 0 : currentSlide.value - 1;
+    currentSlide.value === 0 ? totalSlides.value - 1 : currentSlide.value - 1;
+    resetAutoSlide();
 };
 
 const handleResize = () => {
@@ -237,12 +260,26 @@ const handleResize = () => {
   }
 };
 
+// Reset auto slide
+const resetAutoSlide = () => {
+  clearInterval(autoSlideInterval);
+  autoSlideInterval = setInterval(() => {
+    nextSlide();
+  }, 9000);
+};
+
 onMounted(() => {
   handleResize();
   window.addEventListener("resize", handleResize);
+  
+// automated slide
+  autoSlideInterval = setInterval(() => {
+    nextSlide();
+  }, 9000);
 });
 
 onBeforeUnmount(() => {
   window.removeEventListener("resize", handleResize);
+  clearInterval(autoSlideInterval);
 });
 </script>
