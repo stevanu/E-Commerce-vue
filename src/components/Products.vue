@@ -93,7 +93,7 @@
                     </span>
                   </div>
                   <button
-                    class="p-2 bg-pink-950 rounded-full text-white hover:bg-pink-700 transition-colors"
+                    class="p-2 bg-pink-950 rounded-full text-white hover:bg-pink-700 transition-colors cursor-pointer"
                     aria-label="Add to cart"
                   >
                     <icon
@@ -128,7 +128,14 @@
 </template>
 <script setup>
 import { ref, computed, onMounted, onBeforeUnmount } from "vue";
-import product from '../assets/bag1.jpg'
+import product1 from "../assets/bag1.jpg";
+import product2 from "../assets/bag2.jpg";
+import product3 from "../assets/bag3.jpg";
+import product4 from "../assets/bag4.jpg";
+import product5 from "../assets/bag5.jpg";
+import product6 from "../assets/bag6.jpg";
+import product7 from "../assets/bag7.jpg";
+import product8 from "../assets/bag8.jpg";
 
 const currentSlide = ref(0);
 const productsPerPage = ref(4);
@@ -139,7 +146,7 @@ const products = [
     name: "Product 1",
     price: 10.99,
     rating: 4.5,
-    image:product,
+    image: product1,
     discount: 10,
   },
   {
@@ -147,7 +154,7 @@ const products = [
     name: "Product 2",
     price: 10.99,
     rating: 4.5,
-    Image: "../assets/bag1.jpg",
+    image: product2,
     discount: 15,
   },
   {
@@ -155,7 +162,7 @@ const products = [
     name: "Product 3",
     price: 10.99,
     rating: 4.5,
-    Image: "../assets/bag1.jpg",
+    image: product3,
     discount: 20,
   },
   {
@@ -163,7 +170,7 @@ const products = [
     name: "Product 4",
     price: 10.99,
     rating: 4.5,
-    Image: "../assets/bag1.jpg",
+    image: product4,
     discount: 10,
   },
   {
@@ -171,7 +178,7 @@ const products = [
     name: "Product 5",
     price: 10.99,
     rating: 4.5,
-    Image: "../assets/bag1.jpg",
+    image: product5,
     discount: 15,
   },
   {
@@ -179,7 +186,7 @@ const products = [
     name: "Product 6",
     price: 10.99,
     rating: 4.5,
-    Image: "../assets/bag1.jpg",
+    image: product6,
     discount: 5,
   },
   {
@@ -187,7 +194,7 @@ const products = [
     name: "Product 7",
     price: 10.99,
     rating: 4.5,
-    Image: "../assets/bag1.jpg",
+    image: product7,
     discount: 25,
   },
   {
@@ -195,7 +202,7 @@ const products = [
     name: "Product 8",
     price: 10.99,
     rating: 4.5,
-    Image: "../assets/bag1.jpg",
+    image: product8,
     discount: 20,
   },
 ];

@@ -62,7 +62,7 @@
                 flex items-center justify-center">5</span>
             </button>
                         <button class="relative p-2 text-gray-700 hover:text-pink-600" aria-label="wishlist">
-                <icon icon="mdi:account-outline" class="w-5 h-5 " />
+                <icon icon="mdi:account-outline" class="w-6 h-6 " />
             </button>
            </aside>
         </div>
