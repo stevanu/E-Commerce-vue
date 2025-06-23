@@ -111,7 +111,7 @@
         </ul>
         </transition>
       </section>
-
+      <!-- Navigation -->
       <nav
         class="flex justify-center mt-6 space-x-2"
         aria-label="Carousel Pagination"
@@ -165,15 +165,15 @@ const products = [
   {
     id: 1,
     name: "Product 1",
-    price: 10.99,
-    rating: 4.5,
+    price: 100.99,
+    rating: 4.6,
     image: product1,
     discount: 10,
   },
   {
     id: 2,
     name: "Product 2",
-    price: 10.99,
+    price: 130.99,
     rating: 4.5,
     image: product2,
     discount: 15,
@@ -181,39 +181,39 @@ const products = [
   {
     id: 3,
     name: "Product 3",
-    price: 10.99,
-    rating: 4.5,
+    price: 172.99,
+    rating: 4.4,
     image: product3,
     discount: 20,
   },
   {
     id: 4,
     name: "Product 4",
-    price: 10.99,
-    rating: 4.5,
+    price: 212.99,
+    rating: 4.6,
     image: product4,
     discount: 10,
   },
   {
     id: 5,
     name: "Product 5",
-    price: 10.99,
-    rating: 4.5,
+    price: 125.99,
+    rating: 4.6,
     image: product5,
     discount: 15,
   },
   {
     id: 6,
     name: "Product 6",
-    price: 10.99,
-    rating: 4.5,
+    price: 293.99,
+    rating: 4.8,
     image: product6,
     discount: 5,
   },
   {
     id: 7,
     name: "Product 7",
-    price: 10.99,
+    price: 334.99,
     rating: 4.5,
     image: product7,
     discount: 25,
@@ -221,8 +221,8 @@ const products = [
   {
     id: 8,
     name: "Product 8",
-    price: 10.99,
-    rating: 4.5,
+    price: 273.99,
+    rating: 4.6,
     image: product8,
     discount: 20,
   },
