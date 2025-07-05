@@ -5,6 +5,7 @@
     <Products />
     <categories />
     <Offers />
+    <About />
   </div>
 </template>
 <script setup>
@@ -13,4 +14,5 @@ import Hero from './components/HeroSection.vue';
 import Products from './components/Products.vue';
 import Categories from './components/Categories.vue';
 import Offers from './components/Offers.vue';
+import About from './components/About.vue';
 </script>
