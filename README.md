@@ -8,18 +8,6 @@
 🚀 **E-Commerce-vue** is a simple e-commerce web application built using **Vue.js 3** for the frontend.  
 It aims to demonstrate basic online shopping functionality such as product listing, adding to cart, checkout simulation, and using local storage for persistent data.
 
----
-
-## ✨ Features
-
-- 🛒 Product listing with images, prices, and descriptions  
-- ➕ Add items to cart  
-- 🛍️ View cart with quantity & total price calculation  
-- 🗑️ Remove items from cart  
-- 💾 Cart data saved in **LocalStorage** (persists after refresh)  
-- 🧾 Simple checkout process simulation (no real payment gateway yet)  
-
----
 
 ## ⚙️ Tech Stack
 
