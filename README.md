@@ -17,10 +17,7 @@ It aims to demonstrate basic online shopping functionality such as product listi
 | Styling    | CSS / Tailwind (optional) |
 | Data Store | LocalStorage       |
 
----
 
-
----
 
 ## 🚀 Getting Started
 
