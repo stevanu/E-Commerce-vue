@@ -19,24 +19,6 @@ It aims to demonstrate basic online shopping functionality such as product listi
 
 ---
 
-## 📂 Project Structure
-
-```
-E-Commerce-vue/
-│
-├── src/
-│ ├── assets/ # Images & static assets
-│ ├── components/ # Vue components
-│ ├── views/ # Page views
-│ ├── router/ # Vue Router setup
-│ └── App.vue # Root component
-│
-├── public/
-├── package.json
-├── vite.config.js # Vite config (or vue-cli config if you used that)
-└── README.md
-```
-
 
 ---
 
