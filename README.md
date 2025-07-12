@@ -40,9 +40,6 @@ npm run dev
 # or
 yarn dev
 ```
-```
-Visit http://localhost:5173 (or the port Vite/Vue CLI shows) to see the app.
-```
 🎯 Usage
 Browse through available products.
 
