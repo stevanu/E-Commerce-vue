@@ -54,4 +54,3 @@ Checkout will simulate a purchase and clear the cart.
 
 🙌 Contributions
 Pull requests are welcome. If you find bugs or have suggestions for improvement, please open an issue or submit a PR.
-```
