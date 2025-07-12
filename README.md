@@ -54,7 +54,7 @@ Checkout will simulate a purchase and clear the cart.
 
 🙌 Contributions
 Pull requests are welcome. If you find bugs or have suggestions for improvement, please open an issue or submit a PR.
-
+```
 🚀 Future Enhancements (Ideas)
 ✅ Add user authentication (login/register)
 ✅ Integrate with backend (Node/Go + MySQL) for products & orders
